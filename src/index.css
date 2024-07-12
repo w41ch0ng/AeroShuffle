@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Frutiger";
+  src: url("/src/assets/fonts/Frutiger.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  user-select: none; /*  make elements non-highlightable  */
+}
+
+* {
+  font-family: "Frutiger", sans-serif;
+}
+
+body {
+  background-image: url("/src/assets/images/backgrounds/w7-wallpaper.png");
+  background-size: cover;
+}
+
+.window-body {
+  background-image: url("/src/assets/images/backgrounds/cloud-background.jpg");
+  background-size: cover;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.login-image {
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(40%);
+  }
+}
+
+.marquee {
+  animation: marquee 4s linear infinite;
+}
+
+.sidebar,
+.user-dropdown {
+  background-image: url("/src/assets/images/backgrounds/w7-wallpaper.png");
+}
+
+.draggable {
+  -webkit-app-region: drag; /*  allow the user to drag window by title bar  */
+}
+
+.title-bar-controls {
+  -webkit-app-region: none; /*  exclude minimise and close buttons from drag  */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #4972d6;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("/src/assets/images/sprites/volume-bar-button.png") no-repeat !important; /* Necessary to override inline styles from 7css */
+  background-size: cover; /* Ensure the sprite image covers the entire thumb */
+  cursor: pointer;
+}
+
+input[type="text"] {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #2d9fd9;
+  height: 30px;
+  padding-left: 10px;
+}
+
+@media (max-height: 660px) {
+  .playback-seekbar {
+    margin-bottom: 15px;
+  }
+
+  .player {
+    padding-top: 2px;
+  }
+}
+
+@media (min-height: 720px) and (max-height: 929px) {
+  .playback-seekbar {
+    padding-top: 2%;
+  }
+}
+
+@media (max-width: 670px) and (min-height: 930px) {
+  .playback-seekbar {
+    padding-top: 5%;
+  }
+}
