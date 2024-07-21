@@ -7,12 +7,10 @@ const clientId = import.meta.env.VITE_CLIENT_ID; // Client ID obtained from envi
 const redirectUri = import.meta.env.VITE_REDIRECT; // Redirect URI for the Spotify authentication flow
 const scopes = [
   "streaming",
-  "user-read-email",
   "user-read-private",
   "user-read-currently-playing",
   "user-read-playback-state",
   "user-modify-playback-state",
-  "app-remote-control",
   "user-library-read",
   "user-library-modify",
   "playlist-read-private",

@@ -60,7 +60,7 @@ export default function EditPlaylistModal({
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full p-2 border rounded-md text-white"
+            className="w-full p-2 border rounded-md text-gray-900"
             maxLength={35}
           />
         </div>
@@ -70,7 +70,7 @@ export default function EditPlaylistModal({
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             rows={5}
-            className="w-full p-2 border rounded-md resize-none text-white"
+            className="w-full p-2 border rounded-md resize-none text-gray-900"
             maxLength={100}
           />
         </div>
