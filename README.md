@@ -41,7 +41,8 @@ Aero Shuffle is a Frutiger Aero themed Spotify Web App, utilising the <a href="h
 Spotify library, create playlists, play music, and more.
 
 > [!IMPORTANT]
-> (Music playback is only available with a Spotify Premium subscription)
+> - (Music playback is only available with a Spotify Premium subscription) </br>
+> - (The live deployment is still pending extension approval from Spotify (-.-), so accounts that have not been authorised will not be able to use the app yet)
 
 This project was made with React, TypeScript and TailwindCSS. I hope to make this better and better so any suggestions are appreciated !.!
 
