@@ -43,6 +43,7 @@ Spotify library, create playlists, play music, and more.
 > [!IMPORTANT]
 > - (Music playback is only available with a Spotify Premium subscription) </br>
 > - (The live deployment is still pending extension approval from Spotify (-.-), so accounts that have not been authorised will not be able to use the app yet)
+> - (Cross-platform availability is still limited based on certain drawbacks from the Spotify API and Web Playback SDK. Both mobile and Safari music playback are not yet available due to these limitations, but I'm working on a workaround)
 
 This project was made with React, TypeScript and TailwindCSS. I hope to make this better and better so any suggestions are appreciated !.!
 
